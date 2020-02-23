@@ -34,7 +34,8 @@ class Main extends CI_Controller {
     $query = $this->db->get_where($name, array(
         'banner_id' => 13
       ));
-    echo json_encode($query->result_array());
+    /*echo json_encode($query->result_array());*/
+    echo $name;
   }
   
   public function get_by_id_name_string() {
