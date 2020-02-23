@@ -31,8 +31,8 @@ class Main extends CI_Controller {
     $name = $this->input->post('name');
     $idName = $this->input->post('id_name');
     $id = intval($this->input->post('id'));
-    $query = $this->db->get_where($name, array(
-        $idName => $id
+    $query = $this->db->get_where('dkm_banner_image', array(
+        'banner_id' => 13
       ));
     echo json_encode($query->result_array());
   }
