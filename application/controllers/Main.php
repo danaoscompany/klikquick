@@ -2,6 +2,9 @@
 
 class Main extends CI_Controller {
   
+  public function index() {
+  }
+  
   public function get() {
     $name = $this->input->post('name');
     $query = $this->db->get($name);
@@ -29,7 +32,7 @@ class Main extends CI_Controller {
   
   public function get_by_id_name() {
     $this->load->helper('form');
-    $name = $this->input->post('name');
+    $name = $this->input->get('name');
     /*$idName = $this->input->post('id_name');
     $id = intval($this->input->post('id'));
     $query = $this->db->get_where($name, array(
