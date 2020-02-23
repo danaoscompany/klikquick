@@ -29,7 +29,7 @@ class Main extends CI_Controller {
   
   public function get_by_id_name() {
     $name = $this->input->post('name');
-    $idName = $this->input->post('id_name');
+    /*$idName = $this->input->post('id_name');
     $id = intval($this->input->post('id'));
     $query = $this->db->get_where($name, array(
         'banner_id' => 13
