@@ -28,6 +28,7 @@ class Main extends CI_Controller {
   }
   
   public function get_by_id_name() {
+    $this->load->helper('form');
     $name = $this->input->post('name');
     /*$idName = $this->input->post('id_name');
     $id = intval($this->input->post('id'));
